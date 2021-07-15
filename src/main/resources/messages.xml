@@ -7,7 +7,7 @@
     <Details>This plugin provides original detectors</Details>
   </Plugin>
 
-  <Detector class="com.sbefsp.MyDetector">
+  <Detector class="com.sbefsp.sample.MyDetector">
     <Details>
       Original detector to detect MY_BUG bug pattern.
     </Details>

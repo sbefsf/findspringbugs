@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="findbugsplugin.xsd"
         pluginid="com.sbefsp.findspringbugs">
 
-        <Detector class="com.sbefsp.MyDetector" reports="MY_BUG" />
+        <Detector class="com.sbefsp.sample.MyDetector" reports="MY_BUG" />
 
         <BugPattern abbrev="MY" type="MY_BUG" category="CORRECTNESS" />
 </FindbugsPlugin>
