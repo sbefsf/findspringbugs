@@ -1,29 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MessageCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="messagecollection.xsd">
+                   xsi:noNamespaceSchemaLocation="messagecollection.xsd">
 
-  <Plugin>
-    <ShortDescription>My SpotBugs Plugin</ShortDescription>
-    <Details>This plugin provides original detectors</Details>
-  </Plugin>
+    <Plugin>
+        <ShortDescription>My SpotBugs Plugin</ShortDescription>
+        <Details>This plugin provides original detectors</Details>
+    </Plugin>
 
-  <Detector class="com.sbefsp.sample.MyDetector">
-    <Details>
-      Original detector to detect MY_BUG bug pattern.
-    </Details>
-  </Detector>
 
-  <BugPattern type="MY_BUG">
-    <ShortDescription>Explain bug pattern shortly.</ShortDescription>
-    <LongDescription>
-      Explain existing problem in code, and how developer should improve their implementation.
-    </LongDescription>
-    <Details>
-<![CDATA[
+
+    <Detector class="sample.MyDetector">
+        <Details>
+            Original detector to detect MY_BUG bug pattern.
+        </Details>
+    </Detector>
+
+    <BugPattern type="MY_BUG">
+        <ShortDescription>Explain bug pattern shortly.</ShortDescription>
+        <LongDescription>
+            Explain existing problem in code, and how developer should improve their implementation.
+        </LongDescription>
+        <Details>
+            <![CDATA[
 <p>Explain existing problem in code, and how developer should improve their implementation.</p>
 ]]>
-    </Details>
-  </BugPattern>
+        </Details>
+    </BugPattern>
 
-  <BugCode abbrev="MY">My SpotBugs BugCode</BugCode>
+    <BugCode abbrev="MY">My SpotBugs BugCode</BugCode>
+
+    <!--    TODO: Fill out the description of detectors-->
+    <!--<Detector class="sample.MyDetector">
+        <Details>
+            bbb
+        </Details>
+    </Detector>
+
+    <BugPattern type="com.sbefsp.findspringbugs.badpractice.InefficientEnumsPersistenceDetector">
+        <ShortDescription>bbb</ShortDescription>
+        <LongDescription>
+            bbb
+        </LongDescription>
+        <Details>
+            <![CDATA[
+<p>bbb</p>
+]]>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="IEP">bbb</BugCode>
+
+    <Detector class="com.sbefsp.findspringbugs.correctness.ConstructorCircularDependencyDetector">
+        <Details>
+            aaa
+        </Details>
+    </Detector>
+
+    <BugPattern type="CONSTRUCTOR_CIRCULAR_DEPENDENCY">
+        <ShortDescription>aaaa</ShortDescription>
+        <LongDescription>
+            aaaa
+        </LongDescription>
+        <Details>
+            <![CDATA[
+<p>aaaa</p>
+]]>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="CCD">aaaa</BugCode>-->
+
 </MessageCollection>

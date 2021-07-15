@@ -1,4 +1,4 @@
-package com.sbefsp.sample;
+package sample;
 
 import org.apache.bcel.Const;
 
