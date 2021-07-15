@@ -1,7 +1,12 @@
 package com.sbefsp.findspringbugs.badpractice;
 
+import edu.umd.cs.findbugs.BugInstance;
+import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.Detector;
 import edu.umd.cs.findbugs.ba.ClassContext;
+import edu.umd.cs.findbugs.bcel.AnnotationDetector;
+import edu.umd.cs.findbugs.bcel.OpcodeStackDetector;
+import org.apache.bcel.Const;
 
 /**
  * This detector identify if @Enumerated(EnumType.ORDINAL) is used
@@ -13,6 +18,10 @@ import edu.umd.cs.findbugs.ba.ClassContext;
  *
  * @author Yoo Chul Kim
  */
-public class InefficientEnumsPersistenceDetector {
+public class InefficientEnumsPersistenceDetector/* extends AnnotationDetector */{
+    private final BugReporter bugReporter;
 
+    public InefficientEnumsPersistenceDetector(BugReporter bugReporter) {
+        this.bugReporter = bugReporter;
+    }
 }

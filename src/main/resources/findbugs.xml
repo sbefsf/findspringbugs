@@ -4,16 +4,15 @@
         pluginid="com.sbefsp.findspringbugs">
 
         <Detector class="sample.MyDetector" reports="MY_BUG" />
-
         <BugPattern abbrev="MY" type="MY_BUG" category="CORRECTNESS" />
 
-        <!-- TODO: Write type name -->
-        <Detector class="com.sbefsp.findspringbugs.badpractice.InefficientEnumsPersistenceDetector"
-                  reports="TYPE_NAME_HERE"/>
-        <BugPattern type="TYPE_NAME_HERE" category="BAD_PRACTICE"/>
+<!--        &lt;!&ndash; TODO: Write type name &ndash;&gt;-->
+<!--        <Detector class="com.sbefsp.findspringbugs.badpractice.InefficientEnumsPersistenceDetector"-->
+<!--                  reports="INEFFICIENT_ENUMS_PERSISTENCE"/>-->
+<!--        <BugPattern abbrev="IEP" type="INEFFICIENT_ENUMS_PERSISTENCE" category="BAD_PRACTICE"/>-->
 
-        <!-- TODO: Write type name -->
-        <Detector class="com.sbefsp.findspringbugs.correctness.ConstructorCircularDependencyDetector"
-                  reports="TYPE_NAME_HERE"/>
-        <BugPattern type="TYPE_NAME_HERE" category="CORRECTNESS"/>
+<!--        &lt;!&ndash; TODO: Write type name &ndash;&gt;-->
+<!--        <Detector class="com.sbefsp.findspringbugs.correctness.ConstructorCircularDependencyDetector"-->
+<!--                  reports="CONSTRUCTOR_CIRCULAR_DEPENDENCY"/>-->
+<!--        <BugPattern abbrev="CCD" type="CONSTRUCTOR_CIRCULAR_DEPENDENCY" category="CORRECTNESS"/>-->
 </FindbugsPlugin>
