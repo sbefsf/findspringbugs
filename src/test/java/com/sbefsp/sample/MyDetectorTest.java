@@ -1,4 +1,4 @@
-package com.sbefsp;
+package com.sbefsp.sample;
 
 import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
 import static org.junit.Assert.assertThat;
@@ -20,7 +20,7 @@ public class MyDetectorTest {
 
     @Test
     public void testGoodCase() {
-        Path path = Paths.get("target/test-classes", "com.sbefsp".replace('.', '/'), "GoodCase.class");
+        Path path = Paths.get("target/test-classes", "com.sbefsp.sample".replace('.', '/'), "GoodCase.class");
         BugCollection bugCollection = spotbugs.performAnalysis(path);
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()
@@ -30,7 +30,7 @@ public class MyDetectorTest {
 
     @Test
     public void testBadCase() {
-        Path path = Paths.get("target/test-classes", "com.sbefsp".replace('.', '/'), "BadCase.class");
+        Path path = Paths.get("target/test-classes", "com.sbefsp.sample".replace('.', '/'), "BadCase.class");
         BugCollection bugCollection = spotbugs.performAnalysis(path);
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()
