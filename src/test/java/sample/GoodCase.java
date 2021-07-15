@@ -1,4 +1,4 @@
-package com.sbefsp.sample;
+package sample;
 
 class GoodCase {
     void method() {

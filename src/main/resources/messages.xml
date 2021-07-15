@@ -7,11 +7,14 @@
     <Details>This plugin provides original detectors</Details>
   </Plugin>
 
-  <Detector class="com.sbefsp.sample.MyDetector">
+  <Detector class="sample.MyDetector">
     <Details>
       Original detector to detect MY_BUG bug pattern.
     </Details>
   </Detector>
+
+  <!--  TODO: describe about the bug detectors of InefficientEnumsPersistenceDetector and ConstructorCircularDependencyDetector -->
+
 
   <BugPattern type="MY_BUG">
     <ShortDescription>Explain bug pattern shortly.</ShortDescription>

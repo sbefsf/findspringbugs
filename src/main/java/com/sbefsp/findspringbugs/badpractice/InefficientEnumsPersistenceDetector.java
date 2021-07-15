@@ -1,4 +1,4 @@
-package com.sbefsp.detector.badpractice;
+package com.sbefsp.findspringbugs.badpractice;
 
 import edu.umd.cs.findbugs.Detector;
 import edu.umd.cs.findbugs.ba.ClassContext;
@@ -13,18 +13,6 @@ import edu.umd.cs.findbugs.ba.ClassContext;
  *
  * @author Yoo Chul Kim
  */
-public class InefficientEnumsPersistenceDetector implements Detector {
-    public InefficientEnumsPersistenceDetector() {
+public class InefficientEnumsPersistenceDetector {
 
-    }
-
-    @Override
-    public void visitClassContext(ClassContext classContext) {
-
-    }
-
-    @Override
-    public void report() {
-
-    }
 }

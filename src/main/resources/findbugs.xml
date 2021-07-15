@@ -3,7 +3,17 @@
         xsi:noNamespaceSchemaLocation="findbugsplugin.xsd"
         pluginid="com.sbefsp.findspringbugs">
 
-        <Detector class="com.sbefsp.sample.MyDetector" reports="MY_BUG" />
+        <Detector class="sample.MyDetector" reports="MY_BUG" />
 
         <BugPattern abbrev="MY" type="MY_BUG" category="CORRECTNESS" />
+
+        <!-- TODO: Write type name -->
+        <Detector class="com.sbefsp.findspringbugs.badpractice.InefficientEnumsPersistenceDetector"
+                  reports="TYPE_NAME_HERE"/>
+        <BugPattern type="TYPE_NAME_HERE" category="BAD_PRACTICE"/>
+
+        <!-- TODO: Write type name -->
+        <Detector class="com.sbefsp.findspringbugs.correctness.ConstructorCircularDependencyDetector"
+                  reports="TYPE_NAME_HERE"/>
+        <BugPattern type="TYPE_NAME_HERE" category="CORRECTNESS"/>
 </FindbugsPlugin>
