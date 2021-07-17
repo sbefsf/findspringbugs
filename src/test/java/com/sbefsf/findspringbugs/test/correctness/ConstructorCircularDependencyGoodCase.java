@@ -1,4 +1,4 @@
-package com.sbefsp.findspringbugs.test.correctness;
+package com.sbefsf.findspringbugs.test.correctness;
 
 public class ConstructorCircularDependencyGoodCase {
 }

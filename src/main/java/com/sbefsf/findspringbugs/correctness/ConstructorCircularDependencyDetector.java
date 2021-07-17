@@ -1,11 +1,7 @@
-package com.sbefsp.findspringbugs.correctness;
+package com.sbefsf.findspringbugs.correctness;
 
-import edu.umd.cs.findbugs.BugInstance;
 import edu.umd.cs.findbugs.BugReporter;
-import edu.umd.cs.findbugs.Detector;
-import edu.umd.cs.findbugs.ba.ClassContext;
 import edu.umd.cs.findbugs.bcel.OpcodeStackDetector;
-import org.apache.bcel.Const;
 
 /**
  * This detector identify if there is circular dependency between constructors.
@@ -16,14 +12,15 @@ import org.apache.bcel.Const;
  *
  * @author Yoo Chul Kim
  */
-public class ConstructorCircularDependencyDetector /*extends OpcodeStackDetector*/ {
+public class ConstructorCircularDependencyDetector extends OpcodeStackDetector {
     private final BugReporter bugReporter;
 
     public ConstructorCircularDependencyDetector(BugReporter bugReporter) {
         this.bugReporter = bugReporter;
     }
 
-//    @Override
-//    public void sawOpcode(int seen) {
-//    }
+    @Override
+    public void sawOpcode(int seen) {
+
+    }
 }
