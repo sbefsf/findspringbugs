@@ -74,8 +74,23 @@
         <LongDescription>
         </LongDescription>
         <Details>
+            Detect
         </Details>
     </BugPattern>
     <BugCode abbrev="CCD">My SpotBugs BugCode</BugCode>
+
+    <Detector class="com.sbefsf.findspringbugs.correctness.MultipleAutowiredConstructorDetector">
+        <Details>
+        </Details>
+    </Detector>
+
+    <BugPattern type="MULTIPLE_AUTOWIRED_CONSTRUCTOR">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="MAC">My SpotBugs BugCode</BugCode>
 
 </MessageCollection>

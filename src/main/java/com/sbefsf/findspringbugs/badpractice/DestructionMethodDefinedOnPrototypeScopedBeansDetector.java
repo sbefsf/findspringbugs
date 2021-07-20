@@ -6,10 +6,10 @@ import edu.umd.cs.findbugs.Detector;
 import edu.umd.cs.findbugs.ba.ClassContext;
 
 /**
- * This detector locates destruction method on the beans with prototype scope
- * <p>
+ * This detector locates destruction method on the beans with prototype scope.
+ *
  * More learn...
- * Pro Spring 5, Ch 4 - section of "Hooking into Bean Destruction" (139 page)
+ * Pro Spring 5 book, Ch 4 - section of "Hooking into Bean Destruction" (139 page)
  *
  * @author Yoo Chul Kim
  */
