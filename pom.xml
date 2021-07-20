@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.sbefsp</groupId>
+  <groupId>com.sbefsf</groupId>
   <artifactId>findspringbugs</artifactId>
   <version>1.0-SNAPSHOT</version>
 
@@ -64,30 +64,30 @@
         <artifactId>xml-maven-plugin</artifactId>
         <version>1.0.2</version>
         <executions>
-          <execution>
-            <id>validate-spotbugs-configuration</id>
-            <goals>
-              <goal>validate</goal>
-            </goals>
-            <configuration>
-              <validationSets>
-                <validationSet>
-                  <dir>src/main/resources</dir>
-                  <includes>
-                    <include>findbugs.xml</include>
-                  </includes>
-                  <systemId>findbugsplugin.xsd</systemId>
-                </validationSet>
-                <validationSet>
-                  <dir>src/main/resources</dir>
-                  <includes>
-                    <include>messages.xml</include>
-                  </includes>
-                  <systemId>messagecollection.xsd</systemId>
-                </validationSet>
-              </validationSets>
-            </configuration>
-          </execution>
+<!--          <execution>-->
+<!--            <id>validate-spotbugs-configuration</id>-->
+<!--            <goals>-->
+<!--              <goal>validate</goal>-->
+<!--            </goals>-->
+<!--            <configuration>-->
+<!--              <validationSets>-->
+<!--                <validationSet>-->
+<!--                  <dir>src/main/resources</dir>-->
+<!--                  <includes>-->
+<!--                    <include>findbugs.xml</include>-->
+<!--                  </includes>-->
+<!--                  <systemId>findbugsplugin.xsd</systemId>-->
+<!--                </validationSet>-->
+<!--                <validationSet>-->
+<!--                  <dir>src/main/resources</dir>-->
+<!--                  <includes>-->
+<!--                    <include>messages.xml</include>-->
+<!--                  </includes>-->
+<!--                  <systemId>messagecollection.xsd</systemId>-->
+<!--                </validationSet>-->
+<!--              </validationSets>-->
+<!--            </configuration>-->
+<!--          </execution>-->
         </executions>
         <dependencies>
           <dependency>
