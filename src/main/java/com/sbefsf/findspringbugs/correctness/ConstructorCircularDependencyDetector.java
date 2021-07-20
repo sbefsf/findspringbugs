@@ -25,7 +25,9 @@ public class ConstructorCircularDependencyDetector implements Detector {
     @Override
     public void visitClassContext(ClassContext classContext) {
         // TODO: Implement the detector with strategy below
-        //
+        // 1 Insert injected beans in the Bean A's constructor into List
+        // 2 Check if the beans in the list also inject Bean A in their constructor
+        //    - Consider also inheritance and implementation (e.g. the second example in the bad case)
     }
 
     @Override
