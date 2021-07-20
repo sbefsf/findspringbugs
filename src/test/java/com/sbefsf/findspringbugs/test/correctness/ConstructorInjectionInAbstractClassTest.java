@@ -9,7 +9,7 @@ public class ConstructorInjectionInAbstractClassTest {
 
 /*    @Test
     public void testGoodCase() {
-        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.correctness".replace('.', '/'), "ConstructorInjectionInAbstractClassDetector.class");
+        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.correctness".replace('.', '/'), "ConstructorInjectionInAbstractClassGoodCase.class");
         BugCollection bugCollection = spotbugs.performAnalysis(path);
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()
@@ -19,7 +19,7 @@ public class ConstructorInjectionInAbstractClassTest {
 
     @Test
     public void testBadCase() {
-        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.correctness".replace('.', '/'), "ConstructorInjectionInAbstractClassDetector.class");
+        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.correctness".replace('.', '/'), "ConstructorInjectionInAbstractClassBadCase.class");
         BugCollection bugCollection = spotbugs.performAnalysis(path);
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()

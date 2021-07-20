@@ -1,6 +1,5 @@
 package com.sbefsf.findspringbugs.test.correctness;
 
-import com.sbefsf.findspringbugs.correctness.WrongOrderInjectionDetector;
 import edu.umd.cs.findbugs.test.SpotBugsRule;
 import org.junit.Rule;
 
@@ -10,7 +9,7 @@ public class WrongOrderInjectionTest {
 
     /*@Test
     public void testGoodCase() {
-        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.correctness".replace('.', '/'), "WrongOrderInjectionDetector.class");
+        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.correctness".replace('.', '/'), "WrongOrderInjectionGoodCase.class");
         BugCollection bugCollection = spotbugs.performAnalysis(path);
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()
@@ -20,7 +19,7 @@ public class WrongOrderInjectionTest {
 
     @Test
     public void testBadCase() {
-        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.correctness".replace('.', '/'), "WrongOrderInjectionDetector.class");
+        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.correctness".replace('.', '/'), "WrongOrderInjectionBadCase.class");
         BugCollection bugCollection = spotbugs.performAnalysis(path);
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()
