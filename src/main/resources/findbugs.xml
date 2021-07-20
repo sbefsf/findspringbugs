@@ -16,11 +16,14 @@
                   reports="DESTRUCTION_METHOD_DEFINED_ON_PROTOTYPE_SCOPED_BEAN"/>
         <BugPattern abbrev="DMDOPSB" type="DESTRUCTION_METHOD_DEFINED_ON_PROTOTYPE_SCOPED_BEAN" category="BAD_PRACTICE"/>
 
-
         <!-- Correctness -->
         <Detector class="com.sbefsf.findspringbugs.correctness.ConstructorCircularDependencyDetector"
                   reports="CONSTRUCTOR_CIRCULAR_DEPENDENCY"/>
         <BugPattern abbrev="CCD" type="CONSTRUCTOR_CIRCULAR_DEPENDENCY" category="CORRECTNESS"/>
+
+        <Detector class="com.sbefsf.findspringbugs.correctness.MultipleAutowiredConstructorDetector"
+                  reports="MULTIPLE_AUTOWIRED_CONSTRUCTOR"/>
+        <BugPattern abbrev="MAC" type="MULTIPLE_AUTOWIRED_CONSTRUCTOR" category="CORRECTNESS"/>
 
 
 </FindbugsPlugin>
