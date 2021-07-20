@@ -6,8 +6,7 @@ import edu.umd.cs.findbugs.Detector;
 import edu.umd.cs.findbugs.ba.ClassContext;
 
 /**
- * This detector identify if @Enumerated(EnumType.ORDINAL) is used
- * in JPA. This causes inflexibility for database column type.
+ * This detector locates destruction method on the beans with prototype scope
  * <p>
  * More learn...
  * Pro Spring 5, Ch 4 - section of "Hooking into Bean Destruction" (139 page)
@@ -32,7 +31,7 @@ public class DestructionMethodDefinedOnPrototypeScopedBeansDetector implements D
         //    - Custom destroy() methods in bean configuration file
         //    - DisposableBean callback interfaces
         //    - @PreDestroy annotations
-        //    -
+        //    - @Bean(initMethod = "afterPropertiesSet", destroyMethod = "destroy") for Java Configuration
     }
 
     @Override
