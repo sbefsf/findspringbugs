@@ -29,4 +29,8 @@
                   reports="AMBIGUOUS_INJECTION_BY_TYPE"/>
         <BugPattern abbrev="AIBT" type="AMBIGUOUS_INJECTION_BY_TYPE" category="CORRECTNESS"/>
 
+        <Detector class="com.sbefsf.findspringbugs.correctness.WrongOrderInjectionDetector"
+                  reports="WRONG_ORDER_INJECTION"/>
+        <BugPattern abbrev="WOI" type="WRONG_ORDER_INJECTION" category="CORRECTNESS"/>
+
 </FindbugsPlugin>
