@@ -25,5 +25,8 @@
                   reports="MULTIPLE_AUTOWIRED_CONSTRUCTOR"/>
         <BugPattern abbrev="MAC" type="MULTIPLE_AUTOWIRED_CONSTRUCTOR" category="CORRECTNESS"/>
 
+        <Detector class="com.sbefsf.findspringbugs.correctness.AmbiguousInjectionByTypeDetector"
+                  reports="AMBIGUOUS_INJECTION_BY_TYPE"/>
+        <BugPattern abbrev="AIBT" type="AMBIGUOUS_INJECTION_BY_TYPE" category="CORRECTNESS"/>
 
 </FindbugsPlugin>

@@ -93,4 +93,19 @@
     </BugPattern>
     <BugCode abbrev="MAC">My SpotBugs BugCode</BugCode>
 
+    <Detector class="com.sbefsf.findspringbugs.correctness.AmbiguousInjectionByTypeDetector">
+        <Details>
+        </Details>
+    </Detector>
+
+    <BugPattern type="AMBIGUOUS_INJECTION_BY_TYPE">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="AIBT">My SpotBugs BugCode</BugCode>
+
+
 </MessageCollection>
