@@ -7,6 +7,9 @@
         <Detector class="sample.MyDetector" reports="MY_BUG" />
         <BugPattern abbrev="MY" type="MY_BUG" category="CORRECTNESS" />
 
+
+        NON_FINAL_SETTER_METHOD_INJECTION_IN_ABSTRACT_CLASS
+
         <!-- Bad Practice -->
         <Detector class="com.sbefsf.findspringbugs.badpractice.InefficientEnumsPersistenceDetector"
                   reports="INEFFICIENT_ENUMS_PERSISTENCE"/>
@@ -15,6 +18,10 @@
         <Detector class="com.sbefsf.findspringbugs.badpractice.DestructionMethodDefinedOnPrototypeScopedBeansDetector"
                   reports="DESTRUCTION_METHOD_DEFINED_ON_PROTOTYPE_SCOPED_BEAN"/>
         <BugPattern abbrev="DMDOPSB" type="DESTRUCTION_METHOD_DEFINED_ON_PROTOTYPE_SCOPED_BEAN" category="BAD_PRACTICE"/>
+
+        <Detector class="com.sbefsf.findspringbugs.badpractice.NonFinalSetterInjectionInAbstractClassDetector"
+                  reports="NON_FINAL_SETTER_INJECTION_IN_ABSTRACT_CLASS"/>
+        <BugPattern abbrev="NFSIIAC" type="NON_FINAL_SETTER_INJECTION_IN_ABSTRACT_CLASS" category="BAD_PRACTICE"/>
 
         <!-- Correctness -->
         <Detector class="com.sbefsf.findspringbugs.correctness.ConstructorCircularDependencyDetector"
@@ -36,5 +43,9 @@
         <Detector class="com.sbefsf.findspringbugs.correctness.AbstractClassBeanDetector"
                   reports="ABSTRACT_CLASS_BEAN"/>
         <BugPattern abbrev="ACB" type="ABSTRACT_CLASS_BEAN" category="CORRECTNESS"/>
+
+        <Detector class="com.sbefsf.findspringbugs.correctness.ConstructorInjectionInAbstractClassDetector"
+                  reports="CONSTRUCTOR_INJECTION_IN_ABSTRACT_CLASS"/>
+        <BugPattern abbrev="CIIAC" type="CONSTRUCTOR_INJECTION_IN_ABSTRACT_CLASS" category="CORRECTNESS"/>
 
 </FindbugsPlugin>

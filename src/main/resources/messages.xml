@@ -42,7 +42,6 @@
     </BugPattern>
     <BugCode abbrev="IEP">My SpotBugs BugCode</BugCode>
 
-
     <Detector class="com.sbefsf.findspringbugs.badpractice.DestructionMethodDefinedOnPrototypeScopedBeansDetector">
         <Details>
         </Details>
@@ -56,6 +55,18 @@
     </BugPattern>
     <BugCode abbrev="DMDOPSB">My SpotBugs BugCode</BugCode>
 
+    <Detector class="com.sbefsf.findspringbugs.badpractice.NonFinalSetterInjectionInAbstractClassDetector">
+        <Details>
+        </Details>
+    </Detector>
+    <BugPattern type="NON_FINAL_SETTER_INJECTION_IN_ABSTRACT_CLASS">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="NFSIIAC">My SpotBugs BugCode</BugCode>
 
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ Correctness @@@@@@@@@@@@@@@@@@@@@@@@@ -->
     <Detector class="com.sbefsf.findspringbugs.correctness.ConstructorCircularDependencyDetector">
@@ -123,5 +134,18 @@
         </Details>
     </BugPattern>
     <BugCode abbrev="ACB">My SpotBugs BugCode</BugCode>
+
+    <Detector class="com.sbefsf.findspringbugs.correctness.ConstructorInjectionInAbstractClassDetector">
+        <Details>
+        </Details>
+    </Detector>
+    <BugPattern type="CONSTRUCTOR_INJECTION_IN_ABSTRACT_CLASS">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="CIIAC">My SpotBugs BugCode</BugCode>
 
 </MessageCollection>

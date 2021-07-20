@@ -9,7 +9,7 @@ public class AbstractClassBeanTest {
 
     /*@Test
     public void testGoodCase() {
-        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.correctness".replace('.', '/'), "AbstractClassBeanDetector.class");
+        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.correctness".replace('.', '/'), "AbstractClassBeanGoodCase.class");
         BugCollection bugCollection = spotbugs.performAnalysis(path);
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()
@@ -19,7 +19,7 @@ public class AbstractClassBeanTest {
 
     @Test
     public void testBadCase() {
-        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.correctness".replace('.', '/'), "AbstractClassBeanDetector.class");
+        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.correctness".replace('.', '/'), "AbstractClassBeanBadCase.class");
         BugCollection bugCollection = spotbugs.performAnalysis(path);
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()
