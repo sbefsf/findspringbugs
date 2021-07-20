@@ -24,7 +24,8 @@ public class ConstructorCircularDependencyDetector implements Detector {
 
     @Override
     public void visitClassContext(ClassContext classContext) {
-
+        // TODO: Implement the detector with strategy below
+        //
     }
 
     @Override
