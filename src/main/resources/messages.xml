@@ -2,12 +2,11 @@
 <MessageCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:noNamespaceSchemaLocation="messagecollection.xsd">
 
+    <!-- Sample -->
     <Plugin>
         <ShortDescription>My SpotBugs Plugin</ShortDescription>
         <Details>This plugin provides original detectors</Details>
     </Plugin>
-
-
 
     <Detector class="sample.MyDetector">
         <Details>
@@ -29,44 +28,54 @@
 
     <BugCode abbrev="MY">My SpotBugs BugCode</BugCode>
 
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ Bad Practice @@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <Detector class="com.sbefsf.findspringbugs.badpractice.InefficientEnumsPersistenceDetector">
+        <Details>
+        </Details>
+    </Detector>
 
-<!--    <Detector class="InefficientEnumsPersistenceDetector">-->
-<!--        <Details>-->
-<!--            bbb-->
-<!--        </Details>-->
-<!--    </Detector>-->
-
-<!--    <BugPattern type="INEFFICIENT_ENUMS_PERSISTENCE">-->
-<!--        <ShortDescription>bbb</ShortDescription>-->
-<!--        <LongDescription>-->
-<!--            bbb-->
-<!--        </LongDescription>-->
-<!--        <Details>-->
-<!--            <![CDATA[-->
-<!--<p>bbb</p>-->
-<!--]]>-->
-<!--        </Details>-->
-<!--    </BugPattern>-->
-<!--    <BugCode abbrev="IEP">bbb</BugCode>-->
+    <BugPattern type="INEFFICIENT_ENUMS_PERSISTENCE">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+            <![CDATA[
+<p>Write Here</p>
+]]>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="IEP">My SpotBugs BugCode</BugCode>
 
 
-<!--    <Detector class="ConstructorCircularDependencyDetector">-->
-<!--        <Details>-->
-<!--            aaa-->
-<!--        </Details>-->
-<!--    </Detector>-->
+    <Detector class="com.sbefsf.findspringbugs.badpractice.DestructionMethodDefinedOnPrototypeScopedBeansDetector">
+        <Details>
+        </Details>
+    </Detector>
 
-<!--    <BugPattern type="CONSTRUCTOR_CIRCULAR_DEPENDENCY">-->
-<!--        <ShortDescription>aaaa</ShortDescription>-->
-<!--        <LongDescription>-->
-<!--            aaaa-->
-<!--        </LongDescription>-->
-<!--        <Details>-->
-<!--            <![CDATA[-->
-<!--<p>aaaa</p>-->
-<!--]]>-->
-<!--        </Details>-->
-<!--    </BugPattern>-->
-<!--    <BugCode abbrev="CCD">aaaa</BugCode>-->
+    <BugPattern type="DESTRUCTION_METHOD_DEFINED_ON_PROTOTYPE_SCOPED_BEAN">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="DMDOPSB">My SpotBugs BugCode</BugCode>
+
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ Correctness @@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <Detector class="com.sbefsf.findspringbugs.correctness.ConstructorCircularDependencyDetector">
+        <Details>
+        </Details>
+    </Detector>
+
+    <BugPattern type="CONSTRUCTOR_CIRCULAR_DEPENDENCY">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="CCD">My SpotBugs BugCode</BugCode>
 
 </MessageCollection>

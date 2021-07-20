@@ -3,14 +3,24 @@
         xsi:noNamespaceSchemaLocation="findbugsplugin.xsd"
         pluginid="com.sbefsp.findspringbugs">
 
+        <!-- Sample -->
         <Detector class="sample.MyDetector" reports="MY_BUG" />
         <BugPattern abbrev="MY" type="MY_BUG" category="CORRECTNESS" />
 
-<!--        <Detector class="InefficientEnumsPersistenceDetector"-->
-<!--                  reports="INEFFICIENT_ENUMS_PERSISTENCE"/>-->
-<!--        <BugPattern abbrev="IEP" type="INEFFICIENT_ENUMS_PERSISTENCE" category="BAD_PRACTICE"/>-->
+        <!-- Bad Practice -->
+        <Detector class="com.sbefsf.findspringbugs.badpractice.InefficientEnumsPersistenceDetector"
+                  reports="INEFFICIENT_ENUMS_PERSISTENCE"/>
+        <BugPattern abbrev="IEP" type="INEFFICIENT_ENUMS_PERSISTENCE" category="BAD_PRACTICE"/>
 
-<!--        <Detector class="ConstructorCircularDependencyDetector"-->
-<!--                  reports="CONSTRUCTOR_CIRCULAR_DEPENDENCY"/>-->
-<!--        <BugPattern abbrev="CCD" type="CONSTRUCTOR_CIRCULAR_DEPENDENCY" category="CORRECTNESS"/>-->
+        <Detector class="com.sbefsf.findspringbugs.badpractice.DestructionMethodDefinedOnPrototypeScopedBeansDetector"
+                  reports="DESTRUCTION_METHOD_DEFINED_ON_PROTOTYPE_SCOPED_BEAN"/>
+        <BugPattern abbrev="DMDOPSB" type="DESTRUCTION_METHOD_DEFINED_ON_PROTOTYPE_SCOPED_BEAN" category="BAD_PRACTICE"/>
+
+
+        <!-- Correctness -->
+        <Detector class="com.sbefsf.findspringbugs.correctness.ConstructorCircularDependencyDetector"
+                  reports="CONSTRUCTOR_CIRCULAR_DEPENDENCY"/>
+        <BugPattern abbrev="CCD" type="CONSTRUCTOR_CIRCULAR_DEPENDENCY" category="CORRECTNESS"/>
+
+
 </FindbugsPlugin>

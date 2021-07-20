@@ -1,6 +1,8 @@
 package com.sbefsf.findspringbugs.correctness;
 
 import edu.umd.cs.findbugs.BugReporter;
+import edu.umd.cs.findbugs.Detector;
+import edu.umd.cs.findbugs.ba.ClassContext;
 import edu.umd.cs.findbugs.bcel.OpcodeStackDetector;
 
 /**
@@ -12,7 +14,8 @@ import edu.umd.cs.findbugs.bcel.OpcodeStackDetector;
  *
  * @author Yoo Chul Kim
  */
-public class ConstructorCircularDependencyDetector extends OpcodeStackDetector {
+public class ConstructorCircularDependencyDetector implements Detector {
+    public static final String CONSTRUCTOR_CIRCULAR_DEPENDENCY_TYPE = "CONSTRUCTOR_CIRCULAR_DEPENDENCY";
     private final BugReporter bugReporter;
 
     public ConstructorCircularDependencyDetector(BugReporter bugReporter) {
@@ -20,7 +23,12 @@ public class ConstructorCircularDependencyDetector extends OpcodeStackDetector {
     }
 
     @Override
-    public void sawOpcode(int seen) {
+    public void visitClassContext(ClassContext classContext) {
+
+    }
+
+    @Override
+    public void report() {
 
     }
 }

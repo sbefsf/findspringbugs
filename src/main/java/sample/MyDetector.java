@@ -15,16 +15,16 @@ public class MyDetector extends OpcodeStackDetector {
 
     @Override
     public void sawOpcode(int seen) {
-//        if (seen != Const.GETSTATIC) {
-//            return;
-//        }
-//        if (getClassConstantOperand().equals("java/lang/System")
-//                && getNameConstantOperand().equals("out")) {
-//            // report bug when System.out is used in code
-//            BugInstance bug = new BugInstance(this, "MY_BUG", NORMAL_PRIORITY)
-//                    .addClassAndMethod(this)
-//                    .addSourceLine(this, getPC());
-//            bugReporter.reportBug(bug);
-//        }
+        if (seen != Const.GETSTATIC) {
+            return;
+        }
+        if (getClassConstantOperand().equals("java/lang/System")
+                && getNameConstantOperand().equals("out")) {
+            // report bug when System.out is used in code
+            BugInstance bug = new BugInstance(this, "MY_BUG", NORMAL_PRIORITY)
+                    .addClassAndMethod(this)
+                    .addSourceLine(this, getPC());
+            bugReporter.reportBug(bug);
+        }
     }
 }
