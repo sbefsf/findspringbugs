@@ -37,4 +37,8 @@
                   reports="ABSTRACT_CLASS_BEAN"/>
         <BugPattern abbrev="ACB" type="ABSTRACT_CLASS_BEAN" category="CORRECTNESS"/>
 
+        <Detector class="com.sbefsf.findspringbugs.correctness.ConstructorInjectionInAbstractClassDetector"
+                  reports="CONSTRUCTOR_INJECTION_IN_ABSTRACT_CLASS"/>
+        <BugPattern abbrev="CIIAC" type="CONSTRUCTOR_INJECTION_IN_ABSTRACT_CLASS" category="CORRECTNESS"/>
+
 </FindbugsPlugin>

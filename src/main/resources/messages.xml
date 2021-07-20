@@ -124,4 +124,17 @@
     </BugPattern>
     <BugCode abbrev="ACB">My SpotBugs BugCode</BugCode>
 
+    <Detector class="com.sbefsf.findspringbugs.correctness.ConstructorInjectionInAbstractClassDetector">
+        <Details>
+        </Details>
+    </Detector>
+    <BugPattern type="CONSTRUCTOR_INJECTION_IN_ABSTRACT_CLASS">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="CIIAC">My SpotBugs BugCode</BugCode>
+
 </MessageCollection>
