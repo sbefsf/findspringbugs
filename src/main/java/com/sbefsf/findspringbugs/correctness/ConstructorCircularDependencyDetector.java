@@ -3,11 +3,10 @@ package com.sbefsf.findspringbugs.correctness;
 import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.Detector;
 import edu.umd.cs.findbugs.ba.ClassContext;
-import edu.umd.cs.findbugs.bcel.OpcodeStackDetector;
 
 /**
  * This detector identify if there is circular dependency between constructors.
- *
+ * <p>
  * More learn...
  * https://www.baeldung.com/circular-dependencies-in-spring
  * https://www.baeldung.com/spring-beancreationexception#1-the-orgspringframeworkbeansfactorybeancurrentlyincreationexception

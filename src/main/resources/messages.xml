@@ -7,13 +7,11 @@
         <ShortDescription>My SpotBugs Plugin</ShortDescription>
         <Details>This plugin provides original detectors</Details>
     </Plugin>
-
     <Detector class="sample.MyDetector">
         <Details>
             Original detector to detect MY_BUG bug pattern.
         </Details>
     </Detector>
-
     <BugPattern type="MY_BUG">
         <ShortDescription>Explain bug pattern shortly.</ShortDescription>
         <LongDescription>
@@ -25,7 +23,6 @@
 ]]>
         </Details>
     </BugPattern>
-
     <BugCode abbrev="MY">My SpotBugs BugCode</BugCode>
 
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ Bad Practice @@@@@@@@@@@@@@@@@@@@@@@@@ -->
@@ -33,7 +30,6 @@
         <Details>
         </Details>
     </Detector>
-
     <BugPattern type="INEFFICIENT_ENUMS_PERSISTENCE">
         <ShortDescription></ShortDescription>
         <LongDescription>
@@ -51,11 +47,9 @@
         <Details>
         </Details>
     </Detector>
-
     <BugPattern type="DESTRUCTION_METHOD_DEFINED_ON_PROTOTYPE_SCOPED_BEAN">
         <ShortDescription></ShortDescription>
         <LongDescription>
-
         </LongDescription>
         <Details>
         </Details>
@@ -68,7 +62,6 @@
         <Details>
         </Details>
     </Detector>
-
     <BugPattern type="CONSTRUCTOR_CIRCULAR_DEPENDENCY">
         <ShortDescription></ShortDescription>
         <LongDescription>
@@ -83,7 +76,6 @@
         <Details>
         </Details>
     </Detector>
-
     <BugPattern type="MULTIPLE_AUTOWIRED_CONSTRUCTOR">
         <ShortDescription></ShortDescription>
         <LongDescription>
@@ -92,5 +84,44 @@
         </Details>
     </BugPattern>
     <BugCode abbrev="MAC">My SpotBugs BugCode</BugCode>
+
+    <Detector class="com.sbefsf.findspringbugs.correctness.AmbiguousInjectionByTypeDetector">
+        <Details>
+        </Details>
+    </Detector>
+    <BugPattern type="AMBIGUOUS_INJECTION_BY_TYPE">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="AIBT">My SpotBugs BugCode</BugCode>
+
+    <Detector class="com.sbefsf.findspringbugs.correctness.WrongOrderInjectionDetector">
+        <Details>
+        </Details>
+    </Detector>
+    <BugPattern type="WRONG_ORDER_INJECTION">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="WOI">My SpotBugs BugCode</BugCode>
+
+    <Detector class="com.sbefsf.findspringbugs.correctness.AbstractClassBeanDetector">
+        <Details>
+        </Details>
+    </Detector>
+    <BugPattern type="ABSTRACT_CLASS_BEAN">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="ACB">My SpotBugs BugCode</BugCode>
 
 </MessageCollection>

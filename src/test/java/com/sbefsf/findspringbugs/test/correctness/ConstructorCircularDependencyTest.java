@@ -20,7 +20,7 @@ public class ConstructorCircularDependencyTest {
 
     /*@Test
     public void testGoodCase() {
-        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.badpractice".replace('.', '/'), "ConstructorCircularDependencyGoodCase.class");
+        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.correctness".replace('.', '/'), "ConstructorCircularDependencyGoodCase.class");
         BugCollection bugCollection = spotbugs.performAnalysis(path);
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()
@@ -30,7 +30,7 @@ public class ConstructorCircularDependencyTest {
 
     @Test
     public void testBadCase() {
-        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.badpractice".replace('.', '/'), "ConstructorCircularDependencyBadCase.class");
+        Path path = Paths.get("target/test-classes", "com.sbefsf.findspringbugs.test.correctness".replace('.', '/'), "ConstructorCircularDependencyBadCase.class");
         BugCollection bugCollection = spotbugs.performAnalysis(path);
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()
