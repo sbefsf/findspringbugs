@@ -39,7 +39,7 @@ public class ConstructorCircularDependencyBadCase {
 
     // --------- example 2 ---------
     @Component
-    public class CircularDependencyA {
+    private class CircularDependencyA {
 
         private CircularDependencyB circB;
 
@@ -50,7 +50,7 @@ public class ConstructorCircularDependencyBadCase {
     }
 
     @Component
-    public class CircularDependencyB {
+    private class CircularDependencyB {
 
         private CircularDependencyA circA;
 

@@ -33,4 +33,8 @@
                   reports="WRONG_ORDER_INJECTION"/>
         <BugPattern abbrev="WOI" type="WRONG_ORDER_INJECTION" category="CORRECTNESS"/>
 
+        <Detector class="com.sbefsf.findspringbugs.correctness.AbstractClassBeanDetector"
+                  reports="ABSTRACT_CLASS_BEAN"/>
+        <BugPattern abbrev="ACB" type="ABSTRACT_CLASS_BEAN" category="CORRECTNESS"/>
+
 </FindbugsPlugin>

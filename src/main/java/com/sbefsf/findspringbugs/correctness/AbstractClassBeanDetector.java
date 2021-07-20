@@ -4,22 +4,21 @@ import edu.umd.cs.findbugs.BugReporter;
 import edu.umd.cs.findbugs.Detector;
 import edu.umd.cs.findbugs.ba.ClassContext;
 
-
 /**
- * This detector identify a constructor that use the object defined in the field.
+ * This detector identify a bean defined as abstract class.
  * <p>
  * More learn...
- * https://www.baeldung.com/running-setup-logic-on-startup-in-spring
+ * https://www.baeldung.com/spring-beancreationexception#2-javalanginstantiationexception
  * <p>
- * WIKI: https://github.com/SpotBugsExtensionForSpringFrameWork/CS5098/wiki/Correctness24
+ * WIKI: https://github.com/SpotBugsExtensionForSpringFrameWork/CS5098/wiki/Correctness8
  *
  * @author Yoo Chul Kim
  */
-public class WrongOrderInjectionDetector implements Detector {
-    public static final String WRONG_ORDER_INJECTION_TYPE = "WRONG_ORDER_INJECTION";
+public class AbstractClassBeanDetector implements Detector {
+    public static final String ABSTRACT_CLASS_BEAN_TYPE = "ABSTRACT_CLASS_BEAN";
     private final BugReporter bugReporter;
 
-    public WrongOrderInjectionDetector(BugReporter bugReporter) {
+    public AbstractClassBeanDetector(BugReporter bugReporter) {
         this.bugReporter = bugReporter;
     }
 

@@ -6,12 +6,12 @@ import org.springframework.stereotype.Component;
 // Source from https://www.baeldung.com/spring-beancreationexception#cause-2
 public class AmbiguousInjectionByTypeBadCase {
     @Component
-    public class BeanB1 implements IBeanB {  }
+    private class BeanB1 implements IBeanB {  }
     @Component
-    public class BeanB2 implements IBeanB {  }
+    private class BeanB2 implements IBeanB {  }
 
     @Component
-    public class BeanA {
+    private class BeanA {
         @Autowired
         private IBeanB dependency; // error: Spring doesn't know which component to autowire
     }

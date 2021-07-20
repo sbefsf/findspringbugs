@@ -7,12 +7,12 @@ import edu.umd.cs.findbugs.ba.ClassContext;
 /**
  * This detector identify multiple beans which inherit the same interface and
  * the bean is not clearly specified.
- *
+ * <p>
  * More learn...
  * See Pro Spring book 5th ed. (112 page)
  * https://www.baeldung.com/spring-beancreationexception#cause-2
  * https://stackoverflow.com/questions/9106416/difference-between-qualifier-and-resource
- *
+ * <p>
  * WIKI: https://github.com/SpotBugsExtensionForSpringFrameWork/CS5098/wiki/Correctness7
  *
  * @author Yoo Chul Kim
