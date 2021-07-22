@@ -187,6 +187,20 @@
     </BugPattern>
     <BugCode abbrev="NUBD">My SpotBugs BugCode</BugCode>
 
+    <Detector class="com.sbefsf.findspringbugs.correctness.IncorrectResultSetColumnCountDetector">
+        <Details>
+        </Details>
+    </Detector>
+    <BugPattern type="INCORRECT_RESULT_SET_COLUMN_COUNT">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="IRSCC">My SpotBugs BugCode</BugCode>
+
+
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ Correctness @@@@@@@@@@@@@@@@@@@@@@@@@ -->
     <Detector class="com.sbefsf.findspringbugs.performance.JPANPlusOneProblemDetector">
         <Details>

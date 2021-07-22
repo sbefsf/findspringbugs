@@ -58,6 +58,10 @@
                   reports="NON_UNIQUE_BEAN_DEFINITION"/>
         <BugPattern abbrev="NUBD" type="NON_UNIQUE_BEAN_DEFINITION" category="CORRECTNESS"/>
 
+        <Detector class="com.sbefsf.findspringbugs.correctness.IncorrectResultSetColumnCountDetector"
+                  reports="INCORRECT_RESULT_SET_COLUMN_COUNT"/>
+        <BugPattern abbrev="IRSCC" type="INCORRECT_RESULT_SET_COLUMN_COUNT" category="CORRECTNESS"/>
+
         <!-- Performance -->
         <Detector class="com.sbefsf.findspringbugs.performance.JPANPlusOneProblemDetector"
                   reports="JPA_N_PLUS_ONE_PROBLEM"/>
