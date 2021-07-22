@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 import java.util.Map;
 
-public class ShortlyAnnotatedCollectionTypeInjectionBadCase {
+public class CollectionTypeInexplicitInjectionBadCase {
     @Autowired
     @Qualifier("map")
     private Map<String, Object> map;

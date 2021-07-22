@@ -5,8 +5,8 @@ import edu.umd.cs.findbugs.Detector;
 import edu.umd.cs.findbugs.ba.ClassContext;
 
 /**
- * This detector identify if a collection type injection comes with @Resource(name="name")
- * rather than @Autowired + @Qualifier("name")
+ * This detector identify a collection type injection which is annotated
+ * @Autowired + @Qualifier("name") annotation rather than  @Resource(name="name").
  * <p>
  * More learn...
  * Pro Spring 5 (84 page)
@@ -15,11 +15,11 @@ import edu.umd.cs.findbugs.ba.ClassContext;
  *
  * @author Yoo Chul Kim
  */
-public class ShortlyAnnotatedCollectionTypeInjectionDetector implements Detector {
-    public static final String SHORTLY_ANNOTATED_COLLECTION_TYPE_INJECTION_TYPE = "SHORTLY_ANNOTATED_COLLECTION_TYPE_INJECTION";
+public class CollectionTypeInexplicitInjectionDetector implements Detector {
+    public static final String COLLECTION_TYPE_INEXPLICIT_INJECTION_TYPE = "COLLECTION_TYPE_INEXPLICIT_INJECTION";
     private final BugReporter bugReporter;
 
-    public ShortlyAnnotatedCollectionTypeInjectionDetector(BugReporter bugReporter) {
+    public CollectionTypeInexplicitInjectionDetector(BugReporter bugReporter) {
         this.bugReporter = bugReporter;
     }
 

@@ -7,7 +7,7 @@ import java.util.Properties;
 import java.util.Set;
 
 // Source from Pro Spring 5, 5th ed. (83 page)
-public class ShortlyAnnotatedCollectionTypeInjectionGoodCase {
+public class CollectionTypeInexplicitInjectionGoodCase {
     @Resource(name="map")
     private Map<String, Object> map;
 

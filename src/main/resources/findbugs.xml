@@ -20,9 +20,9 @@
                   reports="NON_FINAL_SETTER_INJECTION_IN_ABSTRACT_CLASS"/>
         <BugPattern abbrev="NFSIIAC" type="NON_FINAL_SETTER_INJECTION_IN_ABSTRACT_CLASS" category="BAD_PRACTICE"/>
 
-        <Detector class="com.sbefsf.findspringbugs.badpractice.ShortlyAnnotatedCollectionTypeInjectionDetector"
-                  reports="SHORTLY_ANNOTATED_COLLECTION_TYPE_INJECTION"/>
-        <BugPattern abbrev="SACTI" type="SHORTLY_ANNOTATED_COLLECTION_TYPE_INJECTION" category="BAD_PRACTICE"/>
+        <Detector class="com.sbefsf.findspringbugs.badpractice.CollectionTypeInexplicitInjectionDetector"
+                  reports="COLLECTION_TYPE_INEXPLICIT_INJECTION"/>
+        <BugPattern abbrev="CTII" type="COLLECTION_TYPE_INEXPLICIT_INJECTION" category="BAD_PRACTICE"/>
 
 
         <!-- Correctness -->
