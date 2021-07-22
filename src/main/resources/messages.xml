@@ -68,6 +68,19 @@
     </BugPattern>
     <BugCode abbrev="NFSIIAC">My SpotBugs BugCode</BugCode>
 
+    <Detector class="com.sbefsf.findspringbugs.badpractice.CollectionTypeInexplicitInjectionDetector">
+        <Details>
+        </Details>
+    </Detector>
+    <BugPattern type="COLLECTION_TYPE_INEXPLICIT_INJECTION">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="CTII">My SpotBugs BugCode</BugCode>
+
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ Correctness @@@@@@@@@@@@@@@@@@@@@@@@@ -->
     <Detector class="com.sbefsf.findspringbugs.correctness.ConstructorCircularDependencyDetector">
         <Details>
