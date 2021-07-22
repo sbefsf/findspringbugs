@@ -54,6 +54,10 @@
                   reports="CONSTRUCTOR_INJECTION_IN_ABSTRACT_CLASS"/>
         <BugPattern abbrev="CIIAC" type="CONSTRUCTOR_INJECTION_IN_ABSTRACT_CLASS" category="CORRECTNESS"/>
 
+        <Detector class="com.sbefsf.findspringbugs.correctness.NonUniqueBeanDefinitionDetector"
+                  reports="NON_UNIQUE_BEAN_DEFINITION"/>
+        <BugPattern abbrev="NUBD" type="NON_UNIQUE_BEAN_DEFINITION" category="CORRECTNESS"/>
+
         <!-- Performance -->
         <Detector class="com.sbefsf.findspringbugs.performance.JPANPlusOneProblemDetector"
                   reports="JPA_N_PLUS_ONE_PROBLEM"/>
