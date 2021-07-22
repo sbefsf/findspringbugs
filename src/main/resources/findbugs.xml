@@ -24,6 +24,10 @@
                   reports="COLLECTION_TYPE_INEXPLICIT_INJECTION"/>
         <BugPattern abbrev="CTII" type="COLLECTION_TYPE_INEXPLICIT_INJECTION" category="BAD_PRACTICE"/>
 
+        <Detector class="com.sbefsf.findspringbugs.badpractice.NonSpecificWrappedExceptionThrowDetector"
+                  reports="NON_SPECIFIC_WRAPPED_EXCEPTION_THROW"/>
+        <BugPattern abbrev="NSWET" type="NON_SPECIFIC_WRAPPED_EXCEPTION_THROW" category="BAD_PRACTICE"/>
+
 
         <!-- Correctness -->
         <Detector class="com.sbefsf.findspringbugs.correctness.ConstructorCircularDependencyDetector"
