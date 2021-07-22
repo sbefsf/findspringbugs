@@ -81,6 +81,19 @@
     </BugPattern>
     <BugCode abbrev="CTII">My SpotBugs BugCode</BugCode>
 
+    <Detector class="com.sbefsf.findspringbugs.badpractice.NonSpecificWrappedExceptionThrowDetector">
+        <Details>
+        </Details>
+    </Detector>
+    <BugPattern type="NON_SPECIFIC_WRAPPED_EXCEPTION_THROW">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="NSWET">My SpotBugs BugCode</BugCode>
+
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ Correctness @@@@@@@@@@@@@@@@@@@@@@@@@ -->
     <Detector class="com.sbefsf.findspringbugs.correctness.ConstructorCircularDependencyDetector">
         <Details>
@@ -160,5 +173,46 @@
         </Details>
     </BugPattern>
     <BugCode abbrev="CIIAC">My SpotBugs BugCode</BugCode>
+
+    <Detector class="com.sbefsf.findspringbugs.correctness.NonUniqueBeanDefinitionDetector">
+        <Details>
+        </Details>
+    </Detector>
+    <BugPattern type="NON_UNIQUE_BEAN_DEFINITION">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="NUBD">My SpotBugs BugCode</BugCode>
+
+    <Detector class="com.sbefsf.findspringbugs.correctness.IncorrectResultSetColumnCountDetector">
+        <Details>
+        </Details>
+    </Detector>
+    <BugPattern type="INCORRECT_RESULT_SET_COLUMN_COUNT">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="IRSCC">My SpotBugs BugCode</BugCode>
+
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ Correctness @@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <Detector class="com.sbefsf.findspringbugs.performance.JPANPlusOneProblemDetector">
+        <Details>
+        </Details>
+    </Detector>
+    <BugPattern type="JPA_N_PLUS_ONE_PROBLEM">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="JNPOP">My SpotBugs BugCode</BugCode>
 
 </MessageCollection>

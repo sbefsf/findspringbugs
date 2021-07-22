@@ -24,6 +24,10 @@
                   reports="COLLECTION_TYPE_INEXPLICIT_INJECTION"/>
         <BugPattern abbrev="CTII" type="COLLECTION_TYPE_INEXPLICIT_INJECTION" category="BAD_PRACTICE"/>
 
+        <Detector class="com.sbefsf.findspringbugs.badpractice.NonSpecificWrappedExceptionThrowDetector"
+                  reports="NON_SPECIFIC_WRAPPED_EXCEPTION_THROW"/>
+        <BugPattern abbrev="NSWET" type="NON_SPECIFIC_WRAPPED_EXCEPTION_THROW" category="BAD_PRACTICE"/>
+
 
         <!-- Correctness -->
         <Detector class="com.sbefsf.findspringbugs.correctness.ConstructorCircularDependencyDetector"
@@ -49,5 +53,18 @@
         <Detector class="com.sbefsf.findspringbugs.correctness.ConstructorInjectionInAbstractClassDetector"
                   reports="CONSTRUCTOR_INJECTION_IN_ABSTRACT_CLASS"/>
         <BugPattern abbrev="CIIAC" type="CONSTRUCTOR_INJECTION_IN_ABSTRACT_CLASS" category="CORRECTNESS"/>
+
+        <Detector class="com.sbefsf.findspringbugs.correctness.NonUniqueBeanDefinitionDetector"
+                  reports="NON_UNIQUE_BEAN_DEFINITION"/>
+        <BugPattern abbrev="NUBD" type="NON_UNIQUE_BEAN_DEFINITION" category="CORRECTNESS"/>
+
+        <Detector class="com.sbefsf.findspringbugs.correctness.IncorrectResultSetColumnCountDetector"
+                  reports="INCORRECT_RESULT_SET_COLUMN_COUNT"/>
+        <BugPattern abbrev="IRSCC" type="INCORRECT_RESULT_SET_COLUMN_COUNT" category="CORRECTNESS"/>
+
+        <!-- Performance -->
+        <Detector class="com.sbefsf.findspringbugs.performance.JPANPlusOneProblemDetector"
+                  reports="JPA_N_PLUS_ONE_PROBLEM"/>
+        <BugPattern abbrev="JNPOP" type="JPA_N_PLUS_ONE_PROBLEM" category="PERFORMANCE"/>
 
 </FindbugsPlugin>
