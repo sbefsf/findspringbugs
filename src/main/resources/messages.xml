@@ -161,4 +161,18 @@
     </BugPattern>
     <BugCode abbrev="CIIAC">My SpotBugs BugCode</BugCode>
 
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ Correctness @@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <Detector class="com.sbefsf.findspringbugs.performance.JPANPlusOneProblemDetector">
+        <Details>
+        </Details>
+    </Detector>
+    <BugPattern type="JPA_N_PLUS_ONE_PROBLEM">
+        <ShortDescription></ShortDescription>
+        <LongDescription>
+        </LongDescription>
+        <Details>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="JNPOP">My SpotBugs BugCode</BugCode>
+
 </MessageCollection>
